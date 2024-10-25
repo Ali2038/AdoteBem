@@ -1,0 +1,147 @@
+/* fontes que serao usadas no projeto */
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root
+{
+    --fonteTitulos : "Newsreader", sans-serif;
+    --fonteGeral : "Public Sans", sans-serif;
+}
+
+h1,h2
+{
+    font-family: var(--fonteTitulos);
+    font-size: 24px;
+}
+*
+{
+    font-family: var(--fonteGeral);
+    font-size: 22px;
+}
+body 
+{
+    background-color: #e8dcc4;
+}
+/* index */
+.menu 
+{
+    width: 15%;
+    height: 42em;
+    text-align: left;
+    border: 1px solid black;
+    background-color: #f0ecdc;
+    border-radius: 10px 50px 10px;
+}
+.menu li
+{
+    list-style: none;
+    margin: 70px 0px 10px;
+}
+.menu li:hover
+{
+    text-shadow: 0px 0px 20px black;
+    text-decoration: overline;
+    font-weight: bold;
+}
+.menu ul a 
+{
+    text-decoration: none;
+    color: black;
+}
+.titulomenu 
+{
+    font-size: 34px;
+    color: orange;
+    text-shadow: 0px 0px 5px orange;
+    text-decoration: underline;
+}
+
+
+/* catalogo e textos */
+.main 
+{
+    width: 80%;
+    padding: 20px;
+}
+.main-direction
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -42em;
+    
+}
+
+.busca img 
+{
+    width: 23px;
+}
+.busca 
+{
+    text-align: right;
+    padding: 20px;
+    cursor: pointer;
+}
+.busca span:hover 
+{
+    text-shadow: 0px 0px 5px orange;
+}
+
+.catalogos img 
+{
+    width: 20em;
+    height: 13em;
+}
+.catalogos div 
+{
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+.catalogos span 
+{
+    border-radius: 2px;
+}
+
+/* responsividade */
+@media (max-width: 600px)
+{
+    *
+    {
+        font-size: 16px;
+    }
+    .menu
+    {
+    width: 30%;
+    text-align: left;
+    }
+    h2,h1
+    {
+        text-align: right;
+        font-size: 18px;
+    }
+    .titulomenu
+    {
+        font-size: 14px;
+        text-align: left;
+    }
+    .menu li
+    {
+        margin: 70px -20px 0px;
+    }
+
+
+    .catalogos img 
+    {
+        width: 14em;
+        height: 9em;
+    }
+    .catalogos 
+    {
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    .main 
+    {
+        padding: 0px;
+    }
+}
