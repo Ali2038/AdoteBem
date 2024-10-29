@@ -1,0 +1,61 @@
+.menu ul li a
+{
+    text-decoration: none;
+    color: black;
+    margin: 50px;
+}
+
+.menu ul 
+{
+    list-style: none;
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+}
+
+.menu 
+{
+   display: flex;
+   place-content: center;
+   border: 1px solid black;
+}
+
+.logo img 
+{
+    width: 4em;
+    height: 4em;
+    margin-left: 20em;
+    position: absolute;
+}
+
+/* busca detalhada */
+.busca img 
+{
+    width: 3em;
+    height: 3em;
+}
+.busca span 
+{
+    font-size: 24px;
+    padding: 4px;
+}
+
+.busca 
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.boasvindas
+{
+    display: grid;
+    place-content: center;
+    border: 1px solid black;
+    text-align: center;
+}
+.boasvindas p
+{
+    width: 50em;
+    font-size: 23px;
+}
