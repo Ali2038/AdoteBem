@@ -1,3 +1,7 @@
+*
+{
+    overflow-x: hidden;
+}
 .menu ul li a
 {
     text-decoration: none;
@@ -28,6 +32,11 @@
     position: absolute;
 }
 
+main h2 
+{
+    margin-top: -50px;
+    position: absolute;
+}
 /* busca detalhada */
 .busca img 
 {
@@ -49,13 +58,43 @@
 
 .boasvindas
 {
-    display: grid;
-    place-content: center;
+    margin: 0 auto;
+    justify-content: center;
     border: 1px solid black;
     text-align: center;
+    border-radius: 20px;
+    width: 80em;
+    margin-top: 5em;
 }
 .boasvindas p
 {
-    width: 50em;
     font-size: 23px;
+    word-spacing: 8px;
+    padding: 20px;
+}
+
+
+/* catalogo dos animais */
+.catalogos 
+{
+    display: grid;
+    grid-template-columns: 480px 480px 480px 480px;
+    place-items: center;
+    margin-right: 35px;
+}
+.catalogos img
+{
+    width: 25em;
+    height: 18em;
+}
+
+
+.catalogo span 
+{
+    font-size: 24px;
+}
+.catalogo 
+{
+    margin-top: 20px;
+    text-align: center;
 }
